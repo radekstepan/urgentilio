@@ -5,7 +5,7 @@
     "main": "index.js",
     "bin": {
         "urgentilio": "index.js"
-    }
+    },
     "dependencies": {
         "async": "~0.2.9",
         "ejdb": "~1.1.15-1",
