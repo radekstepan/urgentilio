@@ -20,5 +20,9 @@
         "gateway",
         "sms"
     ],
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:radekstepan/urgentilio.git"
+    },
     "author": "Radek <dev@radekstepan.com>"
 }
