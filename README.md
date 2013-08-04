@@ -12,3 +12,9 @@ $ watch --color --interval 60 urgentilio
 ```
 
 The `config.coffee` file is read relative to your current working directory.
+
+You can also pass a path to a custom config file like so:
+
+```bash
+$ urgentilio ./config.coffee
+```

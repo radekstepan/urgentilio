@@ -1,6 +1,6 @@
 {
     "name": "urgentilio",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Urgent email to SMS sender",
     "main": "index.js",
     "bin": {

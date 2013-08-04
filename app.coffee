@@ -5,15 +5,19 @@ async  = require 'async'
 log    = require 'node-logging'
 twilio = require 'twilio'
 EJDB   = require 'ejdb'
+path   = require 'path'
 
 # Open db.
 db = EJDB.open __dirname + '/db/db.ejdb'
 
 config = null ; server = null
 
-async.waterfall [ (cb) ->
+async.waterfall [ (cb) ->    
+    # Resolve the path.
+    file = path.resolve process.cwd(), process.argv[2] or './config.coffee'
+
     try
-        config = require "#{process.cwd()}/config.coffee"
+        config = require file
     catch err
         return cb err
 
